@@ -1,0 +1,212 @@
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+    margin: 0;
+    background: url("../img/Foto 2.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+h1 a {
+    color: #cda45e;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+#titulo, #subtitulo {
+    text-align: center;
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+fieldset {
+    border: 1px solid #59429d;
+    background: rgba(12, 11, 9, 0.6);
+    padding: 1em;
+    margin: 1em 0;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    border-radius: 5px;
+    padding: 0.5em;
+    width: 100%;
+    margin-bottom: 1em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+input:focus, select:focus, textarea:focus {
+    background: white;
+}
+
+button {
+    font-size: 1.5em;
+    background: black;
+    border: 0;
+    color: azure;
+    padding: 0.5em 1em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d9ba85;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.geralservicos, .formulario, .formularios, .consulta, .formcadfuncionario, .consultarcomanda {
+    border: 10px solid darkred;
+    padding: 10px;
+    background-color: gray;
+    margin: 1em auto;
+    max-width: 100%;
+    width: 90%;
+}
+
+.formcadservico, .formcadcomanda {
+    padding-top: 200px;
+    margin: 0 auto;
+}
+
+.menu, .cabecalho, .main, .fotos, .logo {
+    margin: 0 auto;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ajusta a imagem para cobrir todo o contêiner sem distorção */
+}
+
+.consultarserv {
+    margin: 80px auto;
+    color: #fff;
+}
+
+.consultarserv1 {
+    margin-top: 50px;
+}
+
+#header {
+    background: black;
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+    width: 100%;
+    z-index: 997;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    transition: all 0.5s;
+}
+
+#header.header-scrolled {
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 1px solid #37332a;
+}
+
+#header .logo {
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #cda45e;
+    margin: 0;
+}
+
+#header .logo a {
+    color: #cda45e;
+    text-decoration: none;
+}
+
+#header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    color: #d9ba85;
+}
+
+@media (max-width: 768px) {
+    #titulo, #subtitulo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .geralservicos, .formulario, .formularios, .consulta, .formcadfuncionario, .consultarcomanda {
+        width: 100%;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .geralservicos, .formulario, .formularios, .consulta, .formcadfuncionario, .consultarcomanda {
+        width: 80%;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar a {
+        padding: 10px 15px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .geralservicos, .formulario, .formularios, .consulta, .formcadfuncionario, .consultarcomanda {
+        width: 60%;
+    }
+}
