@@ -40,4 +40,4 @@ Este projeto marca o início da minha jornada como desenvolvedora. Ainda há mui
 
 ---
 
-> Feito com dedicação por Raissa 💜
+> Feito por Raissa 💜
